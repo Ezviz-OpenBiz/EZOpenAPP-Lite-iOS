@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EOAModifyNameViewController">
+            <connections>
+                <outlet property="nameTextField" destination="m3i-Ul-dOh" id="tlR-pv-wfG"/>
+                <outlet property="tipLabel" destination="cJG-E9-qXa" id="y8r-x4-dIN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgF-eg-qXB">
+                    <rect key="frame" x="0.0" y="94" width="375" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="开放平台测试" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-Ul-dOh">
+                            <rect key="frame" x="15" y="0.0" width="345" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="m3i-Ul-dOh" firstAttribute="leading" secondItem="zgF-eg-qXB" secondAttribute="leading" constant="15" id="6tF-MM-PFR"/>
+                        <constraint firstAttribute="bottom" secondItem="m3i-Ul-dOh" secondAttribute="bottom" id="LVQ-Tw-NJM"/>
+                        <constraint firstAttribute="trailing" secondItem="m3i-Ul-dOh" secondAttribute="trailing" constant="15" id="NrI-if-h4u"/>
+                        <constraint firstItem="m3i-Ul-dOh" firstAttribute="top" secondItem="zgF-eg-qXB" secondAttribute="top" id="i4Y-eW-x8i"/>
+                        <constraint firstAttribute="height" constant="50" id="nSi-2a-at5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50个字以内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJG-E9-qXa">
+                    <rect key="frame" x="15" y="154" width="345" height="14"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Cbm-h6-VTi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zgF-eg-qXB" secondAttribute="trailing" id="ExK-gG-H5x"/>
+                <constraint firstItem="cJG-E9-qXa" firstAttribute="top" secondItem="zgF-eg-qXB" secondAttribute="bottom" constant="10" id="JvO-gQ-mWM"/>
+                <constraint firstAttribute="trailing" secondItem="cJG-E9-qXa" secondAttribute="trailing" constant="15" id="OBd-7Z-dex"/>
+                <constraint firstItem="zgF-eg-qXB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="XgQ-gO-cP9"/>
+                <constraint firstItem="cJG-E9-qXa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cxT-7i-C5v"/>
+                <constraint firstItem="zgF-eg-qXB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jqu-Z2-qSc"/>
+            </constraints>
+            <point key="canvasLocation" x="-396" y="-99"/>
+        </view>
+    </objects>
+</document>

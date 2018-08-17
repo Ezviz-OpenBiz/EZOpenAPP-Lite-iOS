@@ -1,0 +1,136 @@
+/* 
+  Localizable.strings
+  EZOpenApp
+
+  Created by linyong on 16/12/27.
+  Copyright © 2016年 linyong. All rights reserved.
+*/
+
+"eoa_ok"="确定";
+"eoa_cancel"="取消";
+"eoa_quit"="退出";
+"eoa_next" = "下一步";
+"eoa_done"="完成";
+"eoa_alert_title"="提示";
+
+"need_verify_code"="请输入设备验证码";
+"verify_code_error"="设备验证码错误";
+"verify_code_message" = "您的视频已加密，请输入密码进行查看，初始密码为机身标签上的验证码，如果没有验证码，请输入ABCDEF（密码区分大小写）";
+
+//=================home=================
+"tabbar_dev_title"="资源";
+"tabbar_mes_title"="消息";
+"tabbar_user_title"="我的";
+
+//=================device=================
+"device_title_preview"="预览";
+"device_title_devicelist"="设备";
+"device_type_header"="型号：";
+"device_serial_header"="序列号：";
+"device_time_header"="添加于：";
+"device_modify_name"="修改名称";
+"device_refresh_cover"="刷新封面";
+"device_motion_open"="开启活动检测提醒";
+"device_motion_close"="关闭活动检测提醒";
+"device_more_setting"="更多设置";
+"device_camra_limited"="摄像头访问受限";
+"device_know"="知道了";
+
+//=================message=================
+"message_vc_title"="消息";
+"message_infrared"="红外感应";
+"message_move"="移动侦测";
+"message_water"="水警";
+"message_fire"="火点报警";
+"message_other"="其他报警";
+
+//=================user=================
+"user_vc_title"="我的";
+"user_btn_login"="登录";
+"user_btn_switch"="切换帐号";
+"user_app_description"="Lite版本基于“萤石云开放平台”的SDK\r\n完整体验，请使用“萤石云视频”";
+"user_company"="©2017杭州萤石网络有限公司";
+"user_table_password"="修改密码";
+"user_table_debunk"="我要吐槽";
+"user_alert_title"="确定退出";
+"user_alert_message"="退出后将需要重新登录，确定要退出？";
+"user_commit"="提交";
+
+//=================setting=================
+"setting_modify_device_name_title"="设备名称";
+"setting_modify_camera_name_title"="通道名称";
+"setting_save"="保存";
+"setting_modify_tip"="50个字以内";
+"setting_nav_title"="详细设置";
+"setting_table_name"="名称";
+"setting_table_motion"="活动检测提醒";
+"setting_table_encrypt"="视频/图片加密";
+"setting_table_voice"="设备语音提示";
+"setting_table_tf_card"="TF卡";
+"setting_table_cloud"="云存储";
+"setting_table_rom"="固件版本";
+"setting_delete_alert"="是否删除设备";
+"setting_delete_confirm"="删除";
+"setting_table_delete"="删除设备";
+"setting_delete_success"="删除成功";
+"setting_delete_fail"="删除失败";
+"setting_storage_normal"="使用中";
+"setting_storage_none"="无";
+"setting_storage_need_format"="待初始化";
+"setting_storage_formatting"="初始化中";
+"setting_close_encrypt_message" = "请输入设备密码，密码为机身标签上的验证码，如果没有验证码，请输入ABCDEF（密码区分大小写）";
+"setting_cloud_no_open"="未开通云存储";
+"setting_cloud_no_active"="未激活";
+"setting_cloud_active"="使用中";
+"setting_cloud_expired"="已过期";
+"setting_cloud_no_support"="设备不支持云存储";
+
+//=================realplay=================
+"realplay_flow_current"="当前：";
+"realplay_flow_total"="合计：";
+"realplay_save_sucess"="保存成功";
+"realplay_save_fail"="保存失败";
+"realplay_talking"="对讲中";
+"realplay_press_talk"="按住说话";
+"realplay_play_fail"="播放失败";
+"realplay_talk_fail"="对讲失败";
+"realplay_talk_no_mic_permisson"="麦克风未授权";
+
+//=================playback=================
+"playback_title"="回放";
+"playback_search_fail"="未找到视频文件";
+
+//=================add device=================
+"ad_scan_qr_title"="扫描二维码";
+"ad_allow_camera"="请在设备的`设置-隐私-相机`中允许访问相机。";
+"ad_not_support_scan"="不支持的二维码类型，转用手动输入";
+"ad_get_device_info_msg"="正在查询设备信息，请稍后...";
+"ad_already_added"="您已添加过此设备";
+"ad_added_by_others"="此设备已被别人添加";
+"ad_input_manual"="手动输入";
+"ad_input_serial_hold"="设备序列号";
+"ad_input_code_hold"="设备验证码";
+"ad_device_qr"="设备二维码";
+"ad_add_device_success"="添加设备成功，返回设备列表。";
+"ad_search_config_btn"="配置网络";
+"ad_search_add_btn"="添加设备";
+"ad_search_offline"="设备不在线，请配置网络。";
+"ad_search_online"="设备已在线，可进行添加操作。";
+"ad_config_mode_select_tip"="请选择配网方式";
+"ad_config_mode_line"="有线连接";
+"ad_config_mode_smart"="smart配网(红蓝闪烁)";
+"ad_config_mode_sound"="声波配网(红蓝闪烁)";
+"ad_config_mode_ap"="热点配网(蓝灯闪烁)";
+"ad_config_mode_smart_sound"="smart和声波配网(红蓝闪烁)";
+"ad_wifi_info_tip"="如果你使用的是双频路由器，请不要让摄像机连接5G频段的Wi-Fi。";
+"ad_wifi_info_no_wifi_msg" = "未连接Wi-Fi,请设置合适的Wi-Fi";
+"ad_wifi_info_setting" = "设置";
+"ad_wifi_add_device_title"="添加设备";
+"ad_wifi_configing"="配置网络中...";
+"ad_device_conneting"="Wi-Fi连接中...";
+"ad_device_conneted"="Wi-Fi连接成功";
+"ad_device_registered"="注册平台成功";
+"ad_ap_wifi_connect" = "连接到设备Wi-Fi";
+"ad_ap_step_two_msg" = "进入手机系统Wi-Fi设置界面，选择名称为%@的网络，用提示的密码进行连接";
+"ad_copy_done"="复制完成";
+

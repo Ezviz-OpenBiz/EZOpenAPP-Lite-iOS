@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EZSearchResultViewController">
+            <connections>
+                <outlet property="addDeviceBtn" destination="Ijg-F9-AUX" id="qAv-RE-RUc"/>
+                <outlet property="loadingIndicator" destination="2dG-gy-SEf" id="8Am-hK-CBL"/>
+                <outlet property="msgLabel" destination="LaP-GH-5ma" id="gw6-D6-csX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wifiConfigBtn" destination="vid-ef-Nwg" id="dMD-AV-hsL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2dG-gy-SEf">
+                    <rect key="frame" x="177" y="323" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="N4P-Op-AJ2"/>
+                        <constraint firstAttribute="height" constant="20" id="cJV-KC-Xby"/>
+                    </constraints>
+                </activityIndicatorView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vid-ef-Nwg">
+                    <rect key="frame" x="47" y="224" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="HfB-1m-IGo"/>
+                        <constraint firstAttribute="height" constant="40" id="sSh-G9-ouU"/>
+                    </constraints>
+                    <state key="normal" title="配置网络" backgroundImage="blue_button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="wifiConfigBtnClick:" destination="-1" eventType="touchUpInside" id="asx-LD-Kcs"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijg-F9-AUX">
+                    <rect key="frame" x="47" y="294" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FHB-5q-lAV"/>
+                        <constraint firstAttribute="width" constant="280" id="IhO-XV-xyj"/>
+                    </constraints>
+                    <state key="normal" title="添加设备" backgroundImage="blue_button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addDeviceBtnClick:" destination="-1" eventType="touchUpInside" id="RlY-35-7i1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在查询设备信息，请稍后..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-GH-5ma">
+                    <rect key="frame" x="8" y="104" width="359" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Fvh-N4-jZd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93178934010000003" green="0.93178934010000003" blue="0.93178934010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2dG-gy-SEf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7IZ-ny-9ad"/>
+                <constraint firstItem="vid-ef-Nwg" firstAttribute="top" secondItem="LaP-GH-5ma" secondAttribute="bottom" constant="40" id="KpE-lI-09b"/>
+                <constraint firstItem="LaP-GH-5ma" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="8" id="UwQ-r6-ZHR"/>
+                <constraint firstItem="2dG-gy-SEf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dch-pE-9ub"/>
+                <constraint firstItem="LaP-GH-5ma" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="feB-xW-0kw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LaP-GH-5ma" secondAttribute="trailing" constant="8" id="iCy-1F-4tf"/>
+                <constraint firstItem="Ijg-F9-AUX" firstAttribute="top" secondItem="vid-ef-Nwg" secondAttribute="bottom" constant="30" id="j4F-Hj-BZr"/>
+                <constraint firstItem="vid-ef-Nwg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="slr-8Y-MGp"/>
+                <constraint firstItem="Ijg-F9-AUX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vS2-IB-kb4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue_button" width="285" height="39"/>
+    </resources>
+</document>

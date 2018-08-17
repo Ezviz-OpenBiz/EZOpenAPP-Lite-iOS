@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="EOAPreviewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNN-QN-G2S">
+                        <rect key="frame" x="3" y="1.5" width="369" height="206.5"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-sj-h6v">
+                        <rect key="frame" x="3" y="1.5" width="369" height="206.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7Y-La-kcc">
+                        <rect key="frame" x="5" y="146" width="365" height="61"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptu-4G-bm6">
+                        <rect key="frame" x="15" y="175.5" width="72" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="gaz-J9-JPF"/>
+                            <constraint firstAttribute="height" constant="24" id="lLZ-8E-ZO1"/>
+                        </constraints>
+                        <state key="normal" image="tab_undetection">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="tab_detection"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C2S(999999999)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPD-Ai-a6u">
+                        <rect key="frame" x="97" y="175" width="263" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="B1H-Q4-bid"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开放平台测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEV-gZ-40e">
+                        <rect key="frame" x="15" y="145.5" width="345" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="O6s-xl-82N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-xM-wpq">
+                        <rect key="frame" x="320" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="buz-Kg-uKj"/>
+                            <constraint firstAttribute="height" constant="40" id="igX-cB-sch"/>
+                        </constraints>
+                        <state key="normal" image="btn_set_normal"/>
+                        <state key="highlighted" image="btn_set_highlight"/>
+                        <connections>
+                            <action selector="settingBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TBt-M7-ymC"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="离线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTb-Kb-2Nv">
+                        <rect key="frame" x="3" y="84" width="369" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Xlm-4a-aeh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TEV-gZ-40e" secondAttribute="bottom" constant="40" id="7t8-ZV-z1M"/>
+                    <constraint firstAttribute="trailing" secondItem="hKo-xM-wpq" secondAttribute="trailing" constant="15" id="85q-MQ-DYn"/>
+                    <constraint firstAttribute="trailing" secondItem="yPD-Ai-a6u" secondAttribute="trailing" constant="15" id="9pV-7O-REZ"/>
+                    <constraint firstItem="TEV-gZ-40e" firstAttribute="top" secondItem="i7Y-La-kcc" secondAttribute="top" id="ByY-wv-aJd"/>
+                    <constraint firstAttribute="trailing" secondItem="i7Y-La-kcc" secondAttribute="trailing" constant="5" id="CeD-mm-i7U"/>
+                    <constraint firstItem="lTb-Kb-2Nv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cm2-nj-BmL"/>
+                    <constraint firstAttribute="trailing" secondItem="kNN-QN-G2S" secondAttribute="trailing" constant="3" id="FJ1-Lg-M6b"/>
+                    <constraint firstAttribute="trailing" secondItem="TEV-gZ-40e" secondAttribute="trailing" constant="15" id="HKU-MD-pOa"/>
+                    <constraint firstItem="Hne-sj-h6v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="LbZ-In-zAF"/>
+                    <constraint firstItem="hKo-xM-wpq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="NfK-h5-Duk"/>
+                    <constraint firstAttribute="bottom" secondItem="Hne-sj-h6v" secondAttribute="bottom" constant="1.5" id="PUJ-Rq-a6B"/>
+                    <constraint firstItem="kNN-QN-G2S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1.5" id="QIZ-Ot-s2L"/>
+                    <constraint firstItem="i7Y-La-kcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="SKJ-jp-V6l"/>
+                    <constraint firstItem="Hne-sj-h6v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1.5" id="Sbl-bs-bbm"/>
+                    <constraint firstItem="lTb-Kb-2Nv" firstAttribute="trailing" secondItem="kNN-QN-G2S" secondAttribute="trailing" id="Se7-un-GoW"/>
+                    <constraint firstItem="ptu-4G-bm6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Yc9-De-ibH"/>
+                    <constraint firstItem="kNN-QN-G2S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="ZOE-tK-ovg"/>
+                    <constraint firstItem="kNN-QN-G2S" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="atk-gc-PbQ"/>
+                    <constraint firstItem="ptu-4G-bm6" firstAttribute="leading" secondItem="TEV-gZ-40e" secondAttribute="leading" id="lpV-Be-BoE"/>
+                    <constraint firstItem="lTb-Kb-2Nv" firstAttribute="leading" secondItem="kNN-QN-G2S" secondAttribute="leading" id="nD5-pO-17r"/>
+                    <constraint firstAttribute="bottom" secondItem="ptu-4G-bm6" secondAttribute="bottom" constant="10" id="oIp-zR-DxG"/>
+                    <constraint firstAttribute="bottom" secondItem="kNN-QN-G2S" secondAttribute="bottom" constant="1.5" id="oZ1-Us-MZ9"/>
+                    <constraint firstItem="yPD-Ai-a6u" firstAttribute="centerY" secondItem="ptu-4G-bm6" secondAttribute="centerY" id="s0L-z8-zjt"/>
+                    <constraint firstAttribute="bottom" secondItem="i7Y-La-kcc" secondAttribute="bottom" constant="2.5" id="vZ0-Ba-I4F"/>
+                    <constraint firstAttribute="trailing" secondItem="Hne-sj-h6v" secondAttribute="trailing" constant="3" id="vwo-2o-UeP"/>
+                    <constraint firstItem="yPD-Ai-a6u" firstAttribute="leading" secondItem="ptu-4G-bm6" secondAttribute="trailing" constant="10" id="xIG-c1-dpE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="kNN-QN-G2S" id="UdX-I8-H9R"/>
+                <outlet property="cameraNameLabel" destination="TEV-gZ-40e" id="zuI-YM-Kqz"/>
+                <outlet property="deviceTypeLabel" destination="yPD-Ai-a6u" id="rzz-yt-hCK"/>
+                <outlet property="motionBtn" destination="ptu-4G-bm6" id="Ff8-6o-N2y"/>
+                <outlet property="offlineBgView" destination="Hne-sj-h6v" id="aVh-2A-Gy4"/>
+                <outlet property="offlineLabel" destination="lTb-Kb-2Nv" id="Zbi-Nk-E1h"/>
+                <outlet property="settingBtn" destination="hKo-xM-wpq" id="dq1-Eb-ZuQ"/>
+            </connections>
+            <point key="canvasLocation" x="-96.5" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_set_highlight" width="19" height="19"/>
+        <image name="btn_set_normal" width="19" height="19"/>
+        <image name="tab_detection" width="70" height="24"/>
+        <image name="tab_undetection" width="70" height="24"/>
+    </resources>
+</document>

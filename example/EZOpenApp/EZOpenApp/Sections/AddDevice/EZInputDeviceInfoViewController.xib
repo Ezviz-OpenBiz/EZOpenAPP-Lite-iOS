@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EZInputDeviceInfoViewController">
+            <connections>
+                <outlet property="codeTextField" destination="9ST-we-y6d" id="z78-Mp-FpN"/>
+                <outlet property="serialTextField" destination="4h2-ic-au2" id="KkK-R0-RjD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设备序列号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-ic-au2">
+                    <rect key="frame" x="0.0" y="114" width="375" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="eQ8-Or-ZIh"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设备验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ST-we-y6d">
+                    <rect key="frame" x="0.0" y="184" width="375" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Jfv-3d-7gH"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.93178934010152281" green="0.93178934010152281" blue="0.93178934010152281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4h2-ic-au2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="QdG-1A-DEn"/>
+                <constraint firstItem="9ST-we-y6d" firstAttribute="top" secondItem="4h2-ic-au2" secondAttribute="bottom" constant="30" id="Usf-Hz-LEA"/>
+                <constraint firstItem="9ST-we-y6d" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="b27-Ff-tuv"/>
+                <constraint firstItem="9ST-we-y6d" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rFd-d4-A10"/>
+                <constraint firstItem="4h2-ic-au2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="uSU-gn-ZmQ"/>
+                <constraint firstItem="4h2-ic-au2" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="yos-ls-huQ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
